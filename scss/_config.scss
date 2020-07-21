@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+$primary-color: hsl(322, 100%, 66%);
+$secondary-color: hsl(192, 100%, 9%);
+$neutral-color: hsl(207, 100%, 98%);
+
+$headings-font: "Poppins", sans-serif;
+$body-font: "Open-sans", sans-serif;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 700,
+);
+
+$mobile: 375px;
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
