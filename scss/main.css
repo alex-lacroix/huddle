@@ -190,11 +190,33 @@
     margin-top: 15.625rem;
     width: 100%;
   }
+  .bottom__logo-box {
+    margin-bottom: 0.5rem;
+  }
+  .bottom__logo {
+    -webkit-filter: brightness(20);
+            filter: brightness(20);
+    height: 2rem;
+    width: 2.5rem;
+  }
+  .bottom__logo__text {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
   .bottom__contact-info {
     background-color: #00252e;
     color: #ffffff;
     text-align: left;
     padding: 0 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .bottom__contact-info p {
     color: #ffffff;
@@ -202,8 +224,20 @@
     text-align: left;
     line-height: 1.8em;
   }
-  .bottom__logo {
-    background: url(../images/logo.svg) no-repeat #ffffff;
+  .bottom__contact-info .img-box {
+    min-width: 3rem;
+  }
+  .bottom__contact-info .phone-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3rem;
+  }
+  .bottom__contact-info .email-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1rem;
   }
   .bottom__email-input {
     border-radius: 8px;
@@ -226,7 +260,18 @@
     margin-top: 1rem;
     margin-bottom: 6.25rem;
   }
-  .bottom .fas {
+  .bottom .fa-phone-alt {
+    padding-top: 3rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+  }
+  .bottom .fa-phone-envelope {
+    padding-top: 1rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+  }
+  .bottom .fas::before {
+    font-size: 1.2rem;
     padding-right: 1rem;
   }
   .social-media {
